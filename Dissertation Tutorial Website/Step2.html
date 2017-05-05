@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Step 2: Setting up the Application Files</title>
+<link rel="stylesheet" media="all" href="DissertationCSS.css" />
+</head>
+<body>
+    <!-- menu -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+			<li><a href="Step1.html">Step 1: Setting up Accounts</a></li>
+            <li><a href="Step2.html">Step 2: Setting up the Files</a></li>
+			<li><a href="Step3.html">Step 3: Test Run and Data</a></li>
+			<li><a href="AdditionalExtras.html">Step 4: Advanced Changes</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- main article -->
+    <article>
+	<script type="text/javascript" src="jscolor/jscolor.js"></script>
+ 
+        <h1>Step 2: Setting up the Application Files</h1>
+		 <ul id = summaryBar>
+            <li><a href="#FirebaseIntro">Firebase Introduction and Setup</a></li>
+			<li><a href="#FirebaseSetupFront">Setting up Firebase on the Front End</a></li>
+            <li><a href="#FirebaseSetupBack">Setting up Firebase on the Back End</a></li>
+			<li><a href="#IonicSetup">Ionic Setup</a></li>
+        </ul>
+		
+		<p id="Introduction">
+		In this step, we’re going to set up all the database information and making the IDs of your 
+applications unique. To do that, we’re going to use the firebase project  
+and the app IDs we generated in the last step. We’ll do the Firebase side first, 
+as there are more steps to it, with different sets of steps for each side of the application.
+
+		
+		</p>
+		
+        <p id="FirebaseIntro">
+		<img  src="firebaseprojectpage.png" alt= "The Firebase Project Landing Page" />
+<br />
+Firstly, go in to the Firebase project we created, and click the Add Firebase to your Web app option. 
+This will then present you with the following data. We’ll need this in a moment, so you should keep this window
+ open in your browser while we work through the next steps.
+<br />
+<img  src="firebasedatawindow.png" alt= "The Firebase Project Data Window" />
+<br />
+Next, head in to the Authentication tab, and Enable Email/Password sign-in.
+Then head to the Database tab and press the Import JSON file, and import the sampledata.JSON file provided in the project folder. 
+This is some temporary data to initialise the database. You can edit all of this later.
+<br />
+<img  src="firebaseauthentication.png" alt= "The Firebase Database Authentication Window" />
+<br />
+<img  src="firebaseimportwindow.png" alt= "The Firebase Import JSON Window" />
+
+
+		</p>
+		<p id="FirebaseSetupFront">Next, we’ll import the Firebase Data from earlier in the step in to the right files. 
+		You’ll need a text editor to do this, and I can recommend <a href="https://notepad-plus-plus.org/">Notepad++</a>. Open the frontend folder,
+		and head in to the www folder. Open up the Index.html file in your text editor. Find the section that looks like this, that says “Intialize Firebase”. 
+		Replace the areas that say YOUR DATABASE HERE with the data that came from the Firebase project we created at the start of this step.
+<br />
+<img  src="FirebaseIndexData.png" alt= "The Firebase Data to change in the Index File" />
+<br />
+Next, We need to initialise the tables for access in the application. Go in to the js folder, 
+and open up the Services file in your text editor. At the top you’ll see a set of references. Replace the url sections that say 
+YOUR DATABASE HERE with the database url from our firebase data, but don’t change the ends of these statements as these are required to 
+use the tables in the application!
+<br />
+<img  src="FirebaseServicesData.png" alt= "The Firebase Data to change in the services File" />
+ </p>
+		<p id="FirebaseSetupBack">Next, head in to the business application folder, 
+		head in to the src folder, and within that, the app folder. 
+		Open the app.module.ts file in your text editor, and scroll down to the firebaseConfig that looks like this. 
+		As before, change any YOUR DATABASE HERE data to the data provided by the Firebase Project we created earlier.
+<br />
+<img  src="FirebaseAppModuleData.png" alt= "The Firebase Data to change in the app.module File" />
+
+        </p>
+		<p id="IonicSetup">
+Lastly, You’ll need to open both of the Ionic.config.JSON files,
+ found in the top level of both of the application folders. In these, 
+ Use your app IDs and App names we generated earlier in the YOUR APP HERE sections,
+ using the respective names you gave the two applications and their IDs.
+<br />
+<img  src="IonicAppData.png" alt= "The Ionic App Data to change in the Ionic.config files" />
+		</p>
+		<p id="prevArticle"><a href="Step1.html">Step 1: Setting up Accounts</a></p>
+		<p id="nextArticle"><a href="Step3.html">Step 3: Test Run and Data</a></p>
+ 
+    </article>
+ 
+</body>
+</html>

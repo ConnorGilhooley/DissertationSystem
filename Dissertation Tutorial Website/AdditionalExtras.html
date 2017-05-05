@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Step 4: Advanced Changes</title>
+<link rel="stylesheet" media="all" href="DissertationCSS.css" />
+</head>
+<body>
+    <!-- menu -->
+    <nav>
+        <ul>
+              <li><a href="Home.html">Home</a></li>
+			<li><a href="Step1.html">Step 1: Setting up Accounts</a></li>
+            <li><a href="Step2.html">Step 2: Setting up the Files</a></li>
+			<li><a href="Step3.html">Step 3: Test Run and Data</a></li>
+			<li><a href="AdditionalExtras.html">Step 4: Advanced Changes</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- main article -->
+    <article>
+ 
+        <h1>Step 4: Advanced Changes</h1>
+		 <ul id = summaryBar>
+			<li><a href="#ChangingTables">Changing Table Numbers</a></li>
+            <li><a href="#NavbarColour">Changing the Navigation Bar Colour</a></li>
+        </ul>
+		
+        <p id="Introduction">On this page, we’re going to go over some of the advanced changes you can make before you deploy your app. 
+		These will require you to perform another Ionic Build operation before they take effect, 
+		as they are actual changes to the code of the application.
+		These are built in to the application, 
+		so need to be manually set up before release.</p>
+		<p id="ChangingTables">First of these is changing the number of tables. 
+		This is done by adding a new option to the dropdown list of table numbers. 
+		Open up the customer application folder, and head in to the www folder, then the templates folder within that and open 
+		the Checkout page in your text editor. Then you need to copy one of the previous values 
+		and replace both instances of the number used with the one you’re adding. (Just remember to keep them in order!)
+<br />
+<img  src="changingtablenumbers.png" alt= "The Data to Change Table Numbers" />
+ </p>
+		<p id="NavbarColour">Finally we'll change the colour of the navigation bar. 
+		For this, navigate to the www folder of the customer application and open the Index.html file. From there, 
+		find the Navigation bar as shown below and change the colour to one of the other
+		<a href="https://www.tutorialspoint.com/ionic/ionic_colors.htm/">Ionic Colour Classes</a>. 
+		This will change the colour of the Navigation bar across all pages,
+		but it requires a reload, so it can’t be changed on the fly.
+<br />
+<img  src="changingnavbarcolour.png" alt= "The Data to Change Navigation Bar Colour" />
+
+        </p>
+		<p id="prevArticle"><a href="Step3.html">Step 3: Test Run and Data</a></p>
+ 
+    </article>
+ 
+</body>
+</html>

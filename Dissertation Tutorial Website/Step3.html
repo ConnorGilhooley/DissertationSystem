@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Step 3: Test Run and Data</title>
+<link rel="stylesheet" media="all" href="DissertationCSS.css" />
+</head>
+<body>
+    <!-- menu -->
+    <nav>
+        <ul>
+             <li><a href="Home.html">Home</a></li>
+			<li><a href="Step1.html">Step 1: Setting up Accounts</a></li>
+            <li><a href="Step2.html">Step 2: Setting up the Files</a></li>
+			<li><a href="Step3.html">Step 3: Test Run and Data</a></li>
+			<li><a href="AdditionalExtras.html">Step 4: Advanced Changes</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- main article -->
+    <article>
+ 
+        <h1>Step 3: Test Run and Data</h1>
+		 <ul id = summaryBar>
+            <li><a href="#Testing">Testing your Applications</a></li>
+			<li><a href="#DesignSetup">Benefits of simplistic design</a></li>
+            <li><a href="#MenuSetup">Setting up your Menu</a></li>
+        </ul>
+		
+		<p id="Introduction">
+		In this step, we’re going to test our applications are working and add some data before deployment.
+		For this step, you’ll need your mobile device, and to download <a href=" http://view.ionic.io/">the Ionic View app</a> 
+		to your device. 
+		</p>
+		
+        <p id="Testing">Next, we’ll need to open the Node.js command prompt 
+		that was installed with Ionic. Once you’ve located this, you’ll need to 
+		do the following.
+<br />
+Firstly, type the command (without the dollar sign) replacing the 
+YOUR FRONTEND FILEPATH HERE with the location where you’ve stored the customer application folder. 
+You can do this by opening it in a file explorer, then copying and pasting the location path.
+<br />
+<ul id = inputCommand>
+$cd YOUR FRONTEND FILE PATH HERE
+</ul>
+<br />
+Then, type the following command and when prompted, enter your Ionic account details. 
+Once that’s completed, a testing version of your customer application, using the sample data provided in the sampledata JSON
+will be available for you to download.
+<br />
+<ul id = inputCommand>
+$cd ionic upload
+</ul>
+<br />
+Then we'll repeat this process for our business application too. 
+Once these are working, you can go ahead and supply your own menu and design features through the business application.
+		</p>
+		<p id="DesignSetup">When you set up your design, Navigate to your business application’s Settings tab.
+		From there, you can select the image that forms the background of your login and signup screens, 
+		the image that’ll be displayed as your logo across the app, and a pair of panels for the account settings and navigation bar.
+<br />
+<img  src="SettingsTab.png" alt= "The Settings tab of the business application" />
+</p>
+		<p id="MenuSetup">Finally, to set up your menu, 
+		add your items using the form accessed in the top-right corner.
+		You should then delete the samples so they aren’t showing up on the menu for your users. 
+		You can also edit the existing items with the Edit option.
+<br /> 
+<img  src="MenuTab.png" alt= "The Menu tab of the business application" />
+
+        </p>
+		<p id="prevArticle"><a href="Step2.html">Step 2: Setting up the Files</a></p>
+		<p id="nextArticle"><a href="AdditionalExtras.html">Step 4: Advanced Changes</a></p>
+ 
+    </article>
+ 
+</body>
+</html>

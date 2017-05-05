@@ -1,0 +1,194 @@
+body
+{
+	font-family: 'Cabin', sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/* main page */
+article
+{
+	position: absolute;
+	width: 65%;
+	padding: 30px 15%;
+	background-color: #ffffff;
+	overflow: auto;
+	transform-origin: 0 50%;
+}
+/* Below are styles for the codebox (not the code itself) */
+#inputCommand
+{
+    border:1px solid black;
+    background-color:#EEEEFF;
+    width:300px;
+    overflow:auto;    
+    padding:10px;
+}
+#summaryBar
+{
+	float: right;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #000000;
+	border-width: 3px;
+	padding: 20px;
+	width: 200px;
+	margin: 10px;
+}
+#prevArticle
+{
+	float:left;
+}
+#nextArticle
+{
+	float:right;
+}
+.column
+{
+	float: left;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #000000;
+	border-width: 3px;
+	padding: 10px;
+	width: 200px;
+	margin: 10px;
+}
+#useCopyright
+{
+	padding-bottom: 200px;
+	background-image: url("copyright.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 20%;
+}
+#platformConsideration
+{
+	padding-bottom: 200px;
+	background-image: url("smartphone.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 10%;
+}
+#Deuteranomaly
+{
+	padding-bottom: 200px;
+	background-image: url("apples.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 15%;
+}
+#CSS3
+{
+	padding-bottom: 200px;
+	background-image: url("roundbox.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 20%;
+}
+#ColourWheel
+{
+	width: 20%;
+	height:20%;
+}
+.slideshow
+{
+	position:relative; 
+	width:500px; 
+	height:320px; 
+}
+.slideshow img 
+{ 
+	position:absolute; 
+	left:0; 
+	top:0;
+	width:100%;
+	height:100%;
+	display:block;
+}
+article:after
+{
+	position: absolute;
+	content: ' ';
+	left: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* navigation */
+nav
+{
+	position: fixed;
+	left: -16em;
+	top: 0;
+	bottom: 0;
+	background-color: #C7C7C7;
+	border-right: 50px solid #8F8F8F;
+	box-shadow: 4px 0 5px rgba(0,0,0,0.2);
+	z-index: 1;
+	cursor: pointer;
+}
+
+nav:after
+{
+	position: absolute;
+	content: ' ';
+	width: 0;
+	height: 0;
+	right: -70px;
+	top: 50%;
+}
+
+nav ul
+{
+	width: 14em;
+	list-style-type: none;
+	margin: 0;
+	padding: 1em;
+}
+
+nav a:link, nav a:visited
+{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	line-height: 2.5em;
+	text-indent: 10px;
+	text-decoration: none;
+	color: #000000;
+	border-radius: 4px;
+	outline: 0 none;
+}
+
+
+
+nav:hover
+{
+	left: 0;
+}
+
+nav:hover ~ article
+{
+	transform: translateX(16em) ;
+}
+
+nav:hover ~ article:after
+{
+	left: 60%;
+}
+
+/* typography */
+h1
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0 0 0.2em 0;
+	border-bottom: 1px solid #8F8F8F;
+}
+
+p
+{
+	line-height: 1.5em;
+	margin: 0 0 1.5em 0;
+}
